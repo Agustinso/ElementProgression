@@ -1,0 +1,33 @@
+name: ElementProgression
+version: 0.5
+api-version: 1.13
+main: io.github.agustinso.elementprogression.ElementProgression
+prefix: EP
+load: STARTUP
+authors: [Agustinso]
+description: Plugin de fragmentos para dar habilidades de Atla y otras yerbas
+website: http://agustinso.github.io
+depend: ['ProjectKorra']
+commands:
+   sacarboard:
+     description: atla pls
+   frag:
+     description: Comando basico del plugin.
+     aliases: [EP, elprog, ep, fragmento, frag]
+     usage: |
+            /EP [info/debug]
+                    /EP info - CD y cantidad de fragmentos.
+                    /EP debug - Activa o desactiva el debug.
+   elemento:
+     description: Comando inicial del plugin, elige el elemento y crea el perfil en configuracion.
+     aliases: elem
+     usage: |
+            /elem [aire/agua/tierra/fuego/aleatorio]
+                    /elem aleatorio - Da un elemento aleatorio, no se puede volver a elegir!.
+   epconsola:
+     description: Comando avanzado de EP. Solo consola
+     aliases: epc
+     usage: |
+            /epc [darfrag/darhab] <Player>
+                    /epc darfrag <Player> - Da fragemento, el player debe estar conectado.
+                    /epc darhab <Player> - Da una habilidad nueva, manteniendo
