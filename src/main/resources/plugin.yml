@@ -13,7 +13,7 @@ commands:
      description: atla pls
    frag:
      description: Comando basico del plugin.
-     aliases: [EP, elprog, ep, fragmento, frag]
+     aliases: [EP, elprog, ep, fragmento, frag, kfrag, kf]
      usage: |
             /EP [info/debug]
                     /EP info - CD y cantidad de fragmentos.
