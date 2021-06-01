@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ElementalProgression">
+    <output-path>$PROJECT_DIR$/out/artifacts/ElementalProgression</output-path>
+    <root id="archive" name="ElementalProgression.jar">
+      <element id="module-output" name="ElementProgression" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>
