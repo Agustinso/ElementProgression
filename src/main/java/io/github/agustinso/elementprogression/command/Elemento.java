@@ -36,12 +36,12 @@ public class Elemento implements CommandExecutor
       } else if (args[0].equalsIgnoreCase("aire"))
       {
          ElementProgression.plugin.getConfig().createSection(sender.getName());
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose.air");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose.air");
          ElementProgression.plugin.getServer().dispatchCommand(sender, "atla choose air");
          ElementProgression.plugin.getServer().dispatchCommand(sender, "atla preset create vacio");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose.air");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose.air");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose");
          ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " group set " + args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".elemento", args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".debug", false);
@@ -53,12 +53,12 @@ public class Elemento implements CommandExecutor
       } else if (args[0].equalsIgnoreCase("agua"))
       {
          ElementProgression.plugin.getConfig().createSection(sender.getName());
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose.water");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose.water");
          ElementProgression.plugin.getServer().dispatchCommand(sender, "atla choose water");
          ElementProgression.plugin.getServer().dispatchCommand(sender, "atla preset create vacio");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose.water");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose.water");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose");
          ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " group set " + args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".elemento", args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".debug", false);
@@ -70,12 +70,12 @@ public class Elemento implements CommandExecutor
       } else if (args[0].equalsIgnoreCase("tierra"))
       {
          ElementProgression.plugin.getConfig().createSection(sender.getName());
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose.earth");
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla choose earth");
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla preset create vacio");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose.earth");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose.earth");
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending choose earth");
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending preset create vacio");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose.earth");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose");
          ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " group set " + args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".elemento", args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".debug", false);
@@ -87,12 +87,12 @@ public class Elemento implements CommandExecutor
       } else if (args[0].equalsIgnoreCase("fuego"))
       {
          ElementProgression.plugin.getConfig().createSection(sender.getName());
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose.fire");
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla choose fire");
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla preset create vacio");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose.fire");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose.fire");
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending choose fire");
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending preset create vacio");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose.fire");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose");
          ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " group set " + args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".elemento", args[0].toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".debug", false);
@@ -125,12 +125,12 @@ public class Elemento implements CommandExecutor
             elemIngles = "fire";
          }
 
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add atla.command.choose." + elemIngles);
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla choose " + elemIngles);
-         ElementProgression.plugin.getServer().dispatchCommand(sender, "atla preset create vacio");
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose." + elemIngles);
-         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove atla.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " add bending.command.choose." + elemIngles);
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending choose " + elemIngles);
+         ElementProgression.plugin.getServer().dispatchCommand(sender, "bending preset create vacio");
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose." + elemIngles);
+         ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " remove bending.command.choose");
          ElementProgression.plugin.getServer().dispatchCommand(ElementProgression.plugin.getServer().getConsoleSender(), "pex user " + sender.getName() + " group set " + randomElem.toLowerCase());
          ElementProgression.plugin.getConfig().set(sender.getName() + ".elemento", randomElem);
          ElementProgression.plugin.getConfig().set(sender.getName() + ".debug", false);

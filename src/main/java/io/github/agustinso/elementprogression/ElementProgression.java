@@ -1,5 +1,6 @@
 package io.github.agustinso.elementprogression;
 
+import net.luckperms.api.LuckPerms;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -10,6 +11,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import io.github.agustinso.elementprogression.command.Elemento;
 import io.github.agustinso.elementprogression.command.Frag;
@@ -18,10 +20,12 @@ import io.github.agustinso.elementprogression.command.Sacarboard;
 import io.github.agustinso.elementprogression.event.EntityDeath;
 
 import java.io.File;
+import java.util.Objects;
 
 public class ElementProgression extends JavaPlugin
 {
     public static Plugin plugin;
+    LuckPerms permsAPI;
     public ElementProgression()
     {
         //
@@ -36,6 +40,12 @@ public class ElementProgression extends JavaPlugin
         this.getCommand("sacarboard").setExecutor(new Sacarboard());
         registerEvents(this, new EntityDeath());
         this.veganRecipes();
+
+        RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
+        if (provider != null)
+        {
+            permsAPI = provider.getProvider();
+        }
     }
 
     public void onDisable()
@@ -117,22 +127,7 @@ public class ElementProgression extends JavaPlugin
         }
 
         boolean boolFeatherRecipe = this.getServer().addRecipe(customFeatherRecipe);
-        if (boolFeatherRecipe)
-        {
-            this.getLogger().info("boolFeatherRecipe");
-        }
-
         boolean boolInkRecipe = this.getServer().addRecipe(customInkRecipe);
-        if (boolInkRecipe)
-        {
-            this.getLogger().info("boolInkRecipe");
-        }
-
         boolean boolPieRecipe = this.getServer().addRecipe(customPieRecipe);
-        if (boolPieRecipe)
-        {
-            this.getLogger().info("boolPieRecipe");
-        }
-
     }
 }
